@@ -1,0 +1,5 @@
+---
+"svgizi": patch
+---
+
+intial release
