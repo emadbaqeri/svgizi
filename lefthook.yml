@@ -1,0 +1,13 @@
+commit-msg: 
+  parallel: true
+  jobs:
+    - name: commitlint
+      run: npm run commitlint
+
+    - name: format
+      run: npm run lint-staged
+
+pre-push:
+  jobs:
+    - name: test
+      run: npm run test
