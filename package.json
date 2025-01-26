@@ -3,19 +3,14 @@
 	"version": "0.0.2",
 	"main": "dist/index.js",
 	"description": "Eeasiest Way to Manage SVG Icons for web projects",
-	"keywords": [
-		"svg",
-		"svg-icons"
-	],
+	"keywords": ["svg", "svg-icons"],
 	"author": "Emad Baqeri<contact@emaaad.com> (https://emaaad.com)",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/emadbaqeri/svgizi.git"
 	},
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"type": "module",
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.17.3",
@@ -24,6 +19,7 @@
 		"@commitlint/cli": "^19.6.1",
 		"@commitlint/config-conventional": "^19.6.0",
 		"lefthook": "^1.10.10",
+		"lint-staged": "^15.4.3",
 		"typescript": "^5.7.3",
 		"vitest": "^3.0.4"
 	},
@@ -37,6 +33,7 @@
 		"dev": "vitest",
 		"local-release": "changeset version && changeset publish",
 		"prepublishOnly": "npm run ci",
-    "commitlint": "npx commitlint --edit"
+		"commitlint": "npx commitlint --edit",
+    "lint-staged": "npx lint-staged"
 	}
 }

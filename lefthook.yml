@@ -43,4 +43,8 @@
 commit-msg: 
   parallel: true
   jobs:
-    - run: npm run commitlint
+    - name: commitlint
+      run: npm run commitlint
+
+    - name: format
+      run: npm run lint-staged
